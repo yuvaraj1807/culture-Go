@@ -1,0 +1,51 @@
+a{
+    color: #0077cc;
+    text-decoration: none;
+}
+.packages{
+    margin-top: 38pc;
+}
+.package-tittle{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0077cc;
+}
+.package-content a{
+    color: white;
+}
+.package-content img{
+    width: 280px; 
+    height:313px;
+    object-fit: cover;
+}
+.package-description{
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.package-content{
+    display: block;
+    border: 12px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    
+}
+.package-content p{
+    text-align: center;
+}
+.package-btn{
+    margin-top: 10px;
+    background: #0077cc;
+    font-weight: bold;
+    color: white;
+    margin-left: 35%;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}

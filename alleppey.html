@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="package-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CultureGo</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>CULTUREGO</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search" id="SearchBar">
+                <!-- <button id="icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                <div id="main-result">
+                    <div id="results"></div>
+                </div>
+            </div>
+            <div class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="inclusions">
+        <div id="inclusion-details">
+            <div class="inclusion-sec">
+                <div id="image-container">
+                    <img class="slide" src="img/AdobeStock_313428981_Preview.jpeg" alt="Image 1">
+                    <img class="slide" src="img/AdobeStock_371752665_Preview.jpeg" alt="Image 2">
+                    <img class="slide" src="img/AdobeStock_406596193_Preview.jpeg" alt="Image 3">
+                    <img class="slide" src="img/AdobeStock_497560579_Preview.jpeg" alt="Image 4">
+                </div>
+                <div class="inclusion-details">
+                    <h1>Alleppey Tour</h1>
+                    <h5>3 Nights,4 days || 5000<i class="fa-solid fa-indian-rupee-sign"></i></h5>
+                    <hr>
+                    <h2>Inclusions</h2>
+                    <div class="inclusions-img">
+                        <div class="imgs">
+                            <img src="img/3-star.svg">
+                            <p>Accommodation</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/transport.svg">
+                            <p>Transport</p>
+                        </div>
+                        <div class="imgs"><img src="img/meal.svg">
+                            <p>Meals</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/sightseeing.svg">
+                            <p>Sightseeing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <p> Alleppey Tour It is always nice to spend a honeymoon
+                with your better half secluded amidst calm waters of Kerala,
+                un-interrupted and screened. This experience can certainly be designed for you, in the beautiful
+                houseboats destination Alleppey, Kerala. Not just the exterior, but the entire structure of the boat
+                will make you feel you are inside a 5-star resort.<br>
+
+                If you want to simply be spell-binded indoors in your honeymoon surrounded by calm nature, chirrups and
+                twitters then our 03/04 days Kerala honeymoon package is a complete match for you. Spend a special
+                moment to connect and simply gaze at the deeming sunset and flocking birds from the comforts of your
+                personal boathouse suits.<br>
+
+                You can call Tour My India for details and best offers we provide to make your holiday a memorable and
+                top-notch one<br></p>
+            <p class="note">*Note:number of people increase then discount 15%-20% increase </p>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <h1>Itinerary</h1>
+            <h3>Day1------Arrive Cochin – Alleppey</h3>
+            <p>Upon arrival at Cochin, you will be meeting our representative followed by
+                a drive to Alleppey. You can enjoy the magic of backwater by going on a Houseboat (Kettuvallam)
+                cruise across the backwaters. Later, you can spend the next 22 hours in your floating villa. Enjoy
+                the backwaters of Kerala by getting a glimpse of the village life at close quarters; a unique and
+                unforgettable experience. Enjoy the sunset and stay overnight on the houseboat. You can enjoy
+                breakfast, lunch, and dinner all included.</p>
+            <h3>Day2------Alleppey</h3>
+            <p>After breakfast at the houseboat, you can spend and appreciate backwater and cosy stay at the
+                houseboat. Later, you will be served with lunch and dinner followed by an overnight stay at
+                houseboat.</p>
+            <h3>Day3------Alleppey</h3>
+            <p>After breakfast in the houseboat, you can spend a full day enjoying every
+                moment at the houseboat
+                followed by lunch and dinner. Later, you will be followed by an overnight stay .</p>
+            <h3>Day4------Alleppey – Cochin Departure</h3>
+            <p>After breakfast, you will be driven back to Cochin. On arrival at Cochin,
+                you will be dropped at the airport to connect flight for your onward destination</p>
+            <div id="booking">
+                <button type="button"><a href="form.html">Booking</a></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2025 Website By Developer DYMN.</p>
+        </div>
+    </footer>
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+        function changeImage() {
+            slides.forEach((img, i) => {
+                img.classList.remove("active");
+            });
+
+            slides[index].classList.add("active");
+            index = (index + 1) % slides.length;
+        }
+        setInterval(changeImage, 3000);
+        slides[0].classList.add("active");
+    </script>
+</body>
+
+</html>

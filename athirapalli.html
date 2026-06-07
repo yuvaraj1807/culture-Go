@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="package-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CultureGo</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>CULTUREGO</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search" id="SearchBar">
+                <!-- <button id="icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                <div id="main-result">
+                    <div id="results"></div>
+                </div>
+            </div>
+            <div class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="inclusions">
+        <div id="inclusion-details">
+            <div class="inclusion-sec">
+                <div id="image-container">
+                    <img class="slide" src="img/AdobeStock_313428981_Preview.jpeg" alt="Image 1">
+                    <img class="slide" src="img/AdobeStock_371752665_Preview.jpeg" alt="Image 2">
+                    <img class="slide" src="img/AdobeStock_406596193_Preview.jpeg" alt="Image 3">
+                    <img class="slide" src="img/AdobeStock_497560579_Preview.jpeg" alt="Image 4">
+                </div>
+                <div class="inclusion-details">
+                    <h1>Athirapally Tour</h1>
+                    <h5>4 Nights,5 days || 7000<i class="fa-solid fa-indian-rupee-sign"></i></h5>
+                    <hr>
+                    <h2>Inclusions</h2>
+                    <div class="inclusions-img">
+                        <div class="imgs">
+                            <img src="img/3-star.svg">
+                            <p>Accommodation</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/transport.svg">
+                            <p>Transport</p>
+                        </div>
+                        <div class="imgs"><img src="img/meal.svg">
+                            <p>Meals</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/sightseeing.svg">
+                            <p>Sightseeing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <p> Celebrating a wedding is just not a matter of a day it comes along
+                with many other events. Surely with such hectic working schedule, you will want your honeymoon to be
+                short, and sweet. But finding a perfect itinerary can be tad problematic. That's when Tour My India
+                comes to the rescue. A leading travel operator in India, Tour My India has come up with a five-day
+                package that will cover all the beautiful cities of Kerala like Athirappilly, Kumarakom, and Cochin.
+                Though the trip will be short, but we will make sure that you enjoy the best time of your life during
+                these precious four days by booking the accommodations, and transportation well in advance. So, all that
+                you need to do is fill the form that you can see on the right side of the page with all the
+                requirements, and our tour.<br></p>
+            <p class="note">*Note:number of people increase then discount 15%-20% increase </p>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <h1>Itinerary</h1>
+            <h3>Day1------Arrive Cochin - Athirapally</h3>
+            <p>On arrival at Cochin, meet the representatives who will a take you on a
+                drive to Athirapally to get the glimpse of the mighty fall of Athirapally & Vazhachal. After a short
+                visit, check-in the hotel for overnight stay.</p>
+            <h3>Day2------Athirappilly</h3>
+            <p>Post breakfast, rest of the day will be free for leisure. You can either revisit the waterfalls or
+                visit attractions like Peringalkuthu Dam, Charpa Falls, Silver Storm Water Theme Park, etc</p>
+            <h3>Day3------Athirappilly</h3>
+            <p>After breakfast, you will embark on a drive to Alleppey to enjoy the
+                iconic backwater cruise ride. Enjoy the backwaters of Kerala by getting a glimpse of the village
+                life at close quarters; a unique and unforgettable experience. Dinner, and overnight stay at the
+                Alleppey hotel.</p>
+            <h3>Day4------Alleppey - Kumarakom</h3>
+            <p>After breakfast drive to Kumarakom. Check into a resort at the bank of the
+                Vembanad Lake. Rest of the day will be free for leisure. Overnight stay at the Kumarakom hotel.</p>
+            <h3>Day5------Kumarakom - Cochin Departure</h3>
+            <p>Post breakfast, you will drive back to Cochin to take embark on your
+                journey onwards.</p>
+            <div id="booking">
+                <button type="button"><a href="form.html">Booking</a></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2025 Website By Developer DYMN.</p>
+        </div>
+    </footer>
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+        function changeImage() {
+            slides.forEach((img, i) => {
+                img.classList.remove("active");
+            });
+
+            slides[index].classList.add("active");
+            index = (index + 1) % slides.length;
+        }
+        setInterval(changeImage, 3000);
+        slides[0].classList.add("active");
+    </script>
+</body>
+
+</html>

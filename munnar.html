@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="package-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CultureGo</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>CULTUREGO</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search" id="SearchBar">
+                <!-- <button id="icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                <div id="main-result">
+                    <div id="results"></div>
+                </div>
+            </div>
+            <div class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="inclusions">
+        <div id="inclusion-details">
+            <div class="inclusion-sec">
+                <div id="image-container">
+                    <img class="slide" src="img/AdobeStock_313428981_Preview.jpeg" alt="Image 1">
+                    <img class="slide" src="img/AdobeStock_371752665_Preview.jpeg" alt="Image 2">
+                    <img class="slide" src="img/AdobeStock_406596193_Preview.jpeg" alt="Image 3">
+                    <img class="slide" src="img/AdobeStock_497560579_Preview.jpeg" alt="Image 4">
+                </div>
+                <div class="inclusion-details">
+                    <h1>Munnar Tour</h1>
+                    <h5>3Nights,4days || 7000<i class="fa-solid fa-indian-rupee-sign"></i></h5>
+                    <hr>
+                    <h2>Inclusions</h2>
+                    <div class="inclusions-img">
+                        <div class="imgs">
+                            <img src="img/3-star.svg">
+                            <p>Accommodation</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/transport.svg">
+                            <p>Transport</p>
+                        </div>
+                        <div class="imgs"><img src="img/meal.svg">
+                            <p>Meals</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/sightseeing.svg">
+                            <p>Sightseeing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <p> In this season ignite your senses and spend a rejuvenating holiday
+                with your better half. With one prime
+                destination to pamper and enkindle from the green meadows of Munnar to the colonial streets of Cochin,
+                Kerala promises to give you a detachable one-on-one time all day long. If you are looking for a short
+                wonderfull getaway, this is the right choice especially made for you.<br>
+
+                In our 03/04 days Kerala Alleppey tour you can feel renewed and refreshed with our fine selection of
+                attractions you will see. From mesmerizing waterfalls like Cheyyara, Valara, and Attakadu, you will be
+                dosed with Spice Plantation, Kodanadu Elephant Care Centre, Christ Church, Eravikulam National Park and
+                Madupetty Dam. These are our picks for the best romantic getaways and best honeymoon destinations you
+                can experience in Kerala.<br></p>
+            <p class="note">*Note:number of people increase then discount 15%-20% increase </p>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <h1>Itinerary</h1>
+            <h3>Day1------Arrive Cochin - Munnar</h3>
+            <p>Upon arrival at Cochin, you will meet our representative, later you will
+                be followed by a drive to
+                Munnar. En-routing to Munnar, you can witness beautiful waterfalls like Cheyyara, Valara, and
+                Attakadu along with spice plantation. You will also stop by Kodanadu Elephant Care Centre. Later,
+                with an overnight stay in Munnar.</p>
+            <h3>Day2------Munnar</h3>
+            <p>After breakfast, you can enjoy a full day of sightseeing in and around Munnar. Enjoy panoramic views
+                of Anamudi, the highest peak of South India at 2695 m, which is visible from Munnar. Visit the
+                Christ Church and proceed for wildlife watching at Eravikulam National Park (16 km). After that, you
+                will continue your tour to Rajamalai Hills lying adjacent to the park and stop by at Madupetty Dam
+                which is a famous picnic spot for boating and horse riding. Later, you will be transferred to the
+                hotel for an overnight stay.</p>
+            <h3>Day3------Munnar</h3>
+            <p>You can enjoy a free day touring on your own or you can pay a visit to the
+                beautiful tea plantation. Later, follow with an overnight stay at the selected hotel.</p>
+            <h3>Day4------Munnar</h3>
+            <p>After breakfast at the hotel, you will be driven back to Cochin. On
+                arrival, at Cochin International Airport, you will be connecting flights for your onward
+                destination.</p>
+            <div id="booking">
+                <button type="button"><a href="form.html">Booking</a></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2025 Website By Developer DYMN.</p>
+        </div>
+    </footer>
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+        function changeImage() {
+            slides.forEach((img, i) => {
+                img.classList.remove("active");
+            });
+
+            slides[index].classList.add("active");
+            index = (index + 1) % slides.length;
+        }
+        setInterval(changeImage, 3000);
+        slides[0].classList.add("active");
+    </script>
+</body>
+
+</html>

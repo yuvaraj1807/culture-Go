@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css"/>
+    <link rel="icon" href="img/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="main-header">
+        <div class="header">
+            <h1 class="main-tittle">CULTURE GO</h1>
+            <ul class="size">
+                <li class="li"><a href="index.html">Home</a><span>|</span></li>
+                <li class="li"><a href="package.html">Package</a><span>|</span></li>
+                <li class="li"><a href="about.html">About us</a><span>|</span></li>
+                <li class="li"><a href="contact.html"> Contact us</a><span>|</span></li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="main-form">
+        <h1>QUICK BOOKING</h1>
+        <form action="insert.php" method="POST">
+            <div class="input-bar">
+                <input class="input-bar" type="text" name="username" placeholder="Enter your Name" required>
+            </div>
+            <div class="input-bar">
+                <input class="input-bar" type="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-bar">
+                <input class="input-bar" type="text" name="city" placeholder="Enter your City" required>
+            </div>
+            <div class="input-bar">
+                <input class="input-bar" type="number" name="phone" placeholder="Enter your Phone Number" required>
+            </div>
+            <div class="input-bar">
+                <input class="input-bar" type="number" name="people" placeholder="Enter number of People" required>
+            </div>
+            <div class="input-bar">
+                <input class="input-bar" type="text" name="package" placeholder="Enter the Package name" required>
+            </div>
+            <div class="input-bar">
+                <input class="input-bar" type="date" name="date" id="custom-date" required>
+                <p>*Note:Your trip going date</p> 
+            </div>
+            <input id="btn" type="submit">
+        </form>
+    </div>
+    <div class="end">
+        <p class="footer-text">Copyright © 2025 Website By Developer DYMN.</p>
+        <div class="footer-icons">
+            <i class='bx bxl-whatsapp'></i>
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bx-envelope'></i>
+        </div>
+    </div>
+
+</body>
+
+</html>

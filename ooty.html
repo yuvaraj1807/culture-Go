@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="package-details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CultureGo</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="nav-bar">
+            <div class="logo">
+                <h1>CULTUREGO</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search" id="SearchBar">
+                <!-- <button id="icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                <div id="main-result">
+                    <div id="results"></div>
+                </div>
+            </div>
+            <div class="nav-link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="inclusions">
+        <div id="inclusion-details">
+            <div class="inclusion-sec">
+                <div id="image-container">
+                    <img class="slide" src="img/AdobeStock_313428981_Preview.jpeg" alt="Image 1">
+                    <img class="slide" src="img/AdobeStock_371752665_Preview.jpeg" alt="Image 2">
+                    <img class="slide" src="img/AdobeStock_406596193_Preview.jpeg" alt="Image 3">
+                    <img class="slide" src="img/AdobeStock_497560579_Preview.jpeg" alt="Image 4">
+                </div>
+                <div class="inclusion-details">
+                    <h1>Ooty Tour</h1>
+                    <h5>1Nights,3days || 3000<i class="fa-solid fa-indian-rupee-sign"></i></h5>
+                    <hr>
+                    <h2>Inclusions</h2>
+                    <div class="inclusions-img">
+                        <div class="imgs">
+                            <img src="img/3-star.svg">
+                            <p>Accommodation</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/transport.svg">
+                            <p>Transport</p>
+                        </div>
+                        <div class="imgs"><img src="img/meal.svg">
+                            <p>Meals</p>
+                        </div>
+                        <div class="imgs">
+                            <img src="img/sightseeing.svg">
+                            <p>Sightseeing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <p> Situated deep in the Nilgiri Hills, Ooty is among the key tourist
+                destinations in Southern India. Right from the Botanical Garden to the Ooty Lake the city has so much to
+                gift to the travelers. Our Ooty Hill Tour Package makes you grab all these gifts with both hands. We
+                take you to every popular destination of Ooty hill stations, be it the St. Stephen’s Church or the Wax
+                World Museum. Further, we also take you to Ooty’s nearby attraction, Coonoor, where scores of natural
+                wonders wait to welcome you. Thus, grab our Ooty holiday package and enjoy an unmatched travel
+                experience.<br></p>
+            <p class="note">*Note:number of people increase then discount 15%-20% increase </p>
+        </div>
+    </section>
+    <section class="tour-description">
+        <div class="description">
+            <h1>Itinerary</h1>
+            <h3>Day1------COIMBATORE / OOTY</h3>
+            <p>Early morning drive to Ooty from Coimbatore and on arrival check into a
+                pre-booked hotel. In the afternoon, half day sightseeing tour of Ooty, which includes Botanical
+                Garden, Ooty Boat House (Ooty Lake),Rose Garden, St. Stephen's Church and Wax World Museum. Evening
+                spent in leisure. Dinner and overnight stay in the hotel.</p>
+            <h3>Day2------Ooty-coonoor-Ooty</h3>
+            <p>In the morning after breakfast, proceed for sightseeing tour of Conoor. The tour will include a
+                visit to Sims Park and Dolphin’s Nose Point. In the evening drive back to Ooty and spend rest of the
+                time at leisure. Overnight stay at a hotel in Ooty.</p>
+            <h3>Day3------KODAIKANAL / COIMBATORE</h3>
+            <p>After breakfast, head for your train/flight on time and don't forget to
+                carry your bag full of memories back home.</p>
+            <div id="booking">
+                <button type="button"><a href="form.html">Booking</a></button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <p>Copyright © 2025 Website By Developer DYMN.</p>
+        </div>
+    </footer>
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+        function changeImage() {
+            slides.forEach((img, i) => {
+                img.classList.remove("active");
+            });
+
+            slides[index].classList.add("active");
+            index = (index + 1) % slides.length;
+        }
+        setInterval(changeImage, 3000);
+        slides[0].classList.add("active");
+    </script>
+</body>
+</html>
